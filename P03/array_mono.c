@@ -14,7 +14,6 @@
 int main () {
 	/* ** Deklarasi variabel ** */
 	TabInt T, Tasc, Tdes;
-	ElType X;
 	/* ** Interaksi ** */
 	BacaIsi(&T); /* Masukan dari pengguna */
 	/* ** Memeriksa kemonotonikan ** */
