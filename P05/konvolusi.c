@@ -29,7 +29,7 @@ int main () {
             /* jelajah matriks B */
             for (indeks iB = GetFirstIdxBrs(B); iB <= GetLastIdxBrs(B); iB++) {
                 for (indeks jB = GetFirstIdxKol(B); jB <= GetLastIdxKol(B); jB++) {
-                    if ((iB-si >= GetFirstIdxBrs(A)) && (jB-sj >= GetFirstIdxKol(A)) && (iB-si <= GetLastIdxBrs(A)) && (jB-sj <= GetLastIdxKol(A))) {
+                    if (isIdxEff(A, iB-si, jB-sj)) {
                         El += Elmt(B, iB, jB) * Elmt(A, iB-si, jB-sj);
                     }
                 }
